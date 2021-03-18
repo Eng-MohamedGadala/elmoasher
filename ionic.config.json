@@ -1,0 +1,7 @@
+{
+  "name": "elmoasher",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
