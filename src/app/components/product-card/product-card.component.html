@@ -1,0 +1,19 @@
+<ion-card style="padding: 5px; margin: 2px; box-shadow: none !important" dir="rtl">
+  <ion-img *ngIf="product.image != null" [src]="product.image" style="height: 150px"></ion-img>
+  <ion-img *ngIf="product.image == null" src="assets/10-Almarai-Laban-Full-Fat-Added-Vitamins-180ml-Arabic-PET.png"
+    style="height: 100px"></ion-img>
+  <ion-text color="black" class="card-title">
+    {{ product.name_ar }}
+  </ion-text>
+
+  <ion-text color="black" class="card-title" style="display: inline-flex">
+    {{ product.calories }}<span style="color: gray">({{ product.size }})</span>
+  </ion-text>
+  <br />
+  <ion-text color="black" class="card-title" style="display: inline-flex">
+    {{ product.price }}<span style="color: gray">ج.م </span>
+  </ion-text>
+
+  <ion-button (click)="emit()" style="padding: 3px" color="textprimary" shape="round" fill="solid" expand="block">اضف الي السله
+  </ion-button>
+</ion-card>
